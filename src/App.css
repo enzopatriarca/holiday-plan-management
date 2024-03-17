@@ -36,3 +36,147 @@
     transform: rotate(360deg);
   }
 }
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f0f2f5; /* A light background color for the overall page */
+  
+}
+
+.login-container {
+  padding: 2rem;
+  /* border-radius: 0.5rem; */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(45deg, black, transparent);
+  width: 100%;
+  max-width:700px; /* Adjusted max-width for a wider form if needed */
+  margin: auto; /* Centers the container horizontally in its parent */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff; /* Ensures the container has a white background */
+}
+
+.login-logo {
+  width: 100px; /* Adjust size as needed */
+  margin-bottom: 20px; /* Space between logo and form */
+}
+
+.form-group {
+  width: 400px; /* Ensures form elements use full width of the .login-container */
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%; /* Input fields will fill the width of .form-group */
+  padding: 10px; /* Adjusted padding for input size */
+  margin-bottom: 20px; /* Space between inputs */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding and border are included in width and height */
+}
+
+.btn-success {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%; /* Button will fill the width of its container */
+}
+
+.btn-success:hover {
+  background-color: #45a049;
+}
+
+/* ----------------------------------------------NAV */
+
+nav {
+  background-color: #333; /* Dark background for the navbar */
+  padding: 0.5rem 1rem; /* Padding around navbar content */
+  height: 60px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjust the main ul to space its children */
+  width: 100%; /* Ensure it spans the full width of the navbar */
+}
+
+nav ul li {
+  margin-right: 1rem; /* Space between menu items */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* No margin on the last item */
+}
+
+nav ul li a,
+nav ul li button {
+  color: white; /* Light text color for contrast */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 1rem;
+}
+
+nav ul li button {
+  background: none; /* Remove button background */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+  font: inherit; /* Inherit font from parent */
+  cursor: pointer;
+}
+
+nav ul li button:hover,
+nav ul li a:hover {
+  text-decoration: underline; /* Underline on hover for visual feedback */
+}
+
+.nav-links, .nav-actions {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li,
+.nav-actions li {
+  margin-right: 1rem;
+}
+
+.nav-links li:last-child,
+.nav-actions li:last-child {
+  margin-right: 0;
+}
+
+/* =============================a alert */
+
+.alert {
+  padding: 10px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.alert-danger {
+  border: 1px solid #f44336; 
+}
+
+.widht-login{
+  width: 400px !important;
+}

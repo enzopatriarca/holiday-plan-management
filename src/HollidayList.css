@@ -1,0 +1,278 @@
+/* HolidayList.css */
+.table-container {
+    margin: 20px auto;
+    overflow-x: auto;
+    padding: 14px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #f8f9fa; /* Light background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Slight shadow for depth */
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 8px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 3px 15px;
+  }
+
+  .search-bar{
+    padding-bottom: 10px;
+  }
+  
+  th {
+    background-color: #007bff; /* Primary color */
+    color: #ffffff; /* White text */
+  }
+  
+  tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  tbody tr:last-of-type {
+    border-bottom: 0;
+  }
+  
+  tbody tr:hover {
+    background-color: #f2f2f2; /* Light hover effect */
+  }
+  
+  td a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  td a:hover {
+    text-decoration: underline;
+  }
+  
+  .participants-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Space between participant names */
+  }
+  
+  .participant {
+    background-color: #e7f1ff; /* Light blue background for participants */
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .error {
+    color: #dc3545;
+    text-align: center;
+  }
+
+  .success-message{
+    color: #218838;
+    text-align: center;
+  }
+
+  .participant-badge {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 2px 8px;
+    margin: 2px;
+    border-radius: 15px;
+    font-size: 14px;
+  }
+  
+  .more-badge {
+    cursor: pointer;
+  }
+  
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    display: flex;
+    align-items: center; /* Center the modal vertically */
+    justify-content: center; /* Center the modal horizontally */
+    z-index: 1050; /* Ensure the modal is above other content */
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    max-width: 500px; /* Maximum width of the modal */
+    width: 90%; /* Use most of the screen width on smaller screens */
+    max-height: 80vh; /* Maximum height of the modal */
+    overflow-y: auto; /* Make the content scrollable */
+    position: relative; /* For positioning the close button */
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.5rem; /* Make the close button larger */
+    color: #333; /* Close button color */
+  }
+  
+  .modal-close:hover {
+    color: #666; /* Darken the color on hover for feedback */
+  }
+  
+  /* Styles for the participants' names inside the modal */
+  .participant-name {
+    display: block; /* Each name on its own line */
+    padding: 5px 0; /* Add some vertical spacing */
+    border-bottom: 1px solid #eee; /* Visual separation between names */
+    margin: 0 10px; /* Add some horizontal padding */
+  }
+  
+  .participant-name:last-child {
+    border-bottom: none; /* Remove the border from the last name */
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /* General button styling */
+.table-button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+/* Specific styles for different types of buttons */
+.view-participants-btn {
+  background-color: #17a2b8; /* Bootstrap info color */
+}
+
+.view-participants-btn:hover {
+  background-color: #138496;
+}
+
+.delete-btn {
+  background-color: #dc3545; /* Bootstrap danger color */
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.update-btn {
+  background-color: #28a745; /* Bootstrap success color */
+}
+
+.update-btn:hover {
+  background-color: #218838;
+}
+
+/* Adjustments for links styled as buttons */
+.link-button {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block; /* Aligns better with other inline elements like buttons */
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120px/2 = 60px) to center the tooltip */
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+  
+.List-holiday-container{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: lightgrey;
+}
+
+.List-holiday-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+  
+.generate-pdf-button {
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  color: white; /* White text */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.generate-pdf-button:hover {
+  background-color: #45a049; /* Darker shade of green */
+}

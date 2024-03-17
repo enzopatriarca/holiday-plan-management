@@ -1,0 +1,137 @@
+.form-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: lightgray;
+  }
+  
+  .form-group {
+    margin-bottom: 20px !important;
+    width: 96% !important;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    margin-top: 5px;
+  }
+  
+  .participants-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .participant-badge {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  
+  .more-badge {
+    background-color: #6c757d;
+  }
+  
+  select[multiple] {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 100%;
+    height: auto; /* Adjust based on the number of options you expect to show by default */
+    overflow: auto;
+  }
+
+  input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #007bff; /* or a color that matches your design */
+  outline-offset: 2px;
+}
+
+
+@media (max-width: 600px) {
+    .form-container {
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 15px;
+    }
+  
+    button[type="submit"] {
+      width: 100%; /* Makes the button full-width on smaller screens */
+      padding: 10px 0; /* Adjust padding for better touch targets */
+    }
+  }
+
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .checkbox-label {
+    display: flex !important;
+    justify-content: space-between !important; /* This will push the checkbox to the left and the name to the right */
+    padding: 5px; /* Add some padding for better spacing */
+  }
+  
+
+  .participant-checkboxes-container {
+    height: 150px; /* Adjust height as needed */
+    overflow-y: auto;
+    border: 1px solid #ccc; /* Optional: adds a border around the scrollable area */
+    padding: 10px;
+    border-radius: 4px; /* Optional: rounds the corners */
+  }
+
+.input_selec {
+    width: 9% !important;
+    padding: 10px !important;
+    margin-bottom: 20px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    box-sizing: border-box !important;
+}
